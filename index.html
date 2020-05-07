@@ -7,14 +7,312 @@
     <title>Obsequiarte</title>
     <!--BootStrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a href="" title="Bootstrap" class="navbar-brand">
+
+                <img src="imagenes/logo.jpg" class="store-image" alt="Bootstrap">
+
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContainer">
+                <form id="search_mini_form" class="d-lg-none d-md-block" method="get" action="/search">
+                    <div class="input-group mb-3">
+                        <input type="text" value="" name="q" class="form-control form-control-sm" onfocus="javascript:this.value=''" placeholder="Search for products">
+                        <button type="submit" class="btn btn-outline-secondary"><i class="fas fa-search"></i></button>
+                    </div>
+                    <input type="hidden" value="aK06w9VbStApHe1c2HbASxLSmrQmwnY6NYO2cJQK2pU=" name="authenticity_token"></form>
+                <ul id="navbarContainerMobile" class="navbar-nav d-lg-none">
+
+                    <li class="nav-item  ">
+                        <a href="#" title="Inicio" class="level-1 trsn nav-link">Inicio</a>
+
+                    </li>
+
+
+                    <li class="nav-item  ">
+                        <a href="/techno" title="Techno" class="level-1 trsn nav-link">Techno</a>
+
+                    </li>
+
+
+                    <li class="nav-item  ">
+                        <a href="/about-us" title="About Us" class="level-1 trsn nav-link">About Us</a>
+
+                    </li>
+
+
+                    <li class="nav-item  ">
+                        <a href="/blog" title="Blog" class="level-1 trsn nav-link">Blog</a>
+
+                    </li>
+
+
+                    <li class="nav-item  ">
+                        <a href="/contact" title="Contact" class="level-1 trsn nav-link">Contact</a>
+
+                    </li>
+
+
+                </ul>
+                <ul class="nav navbar-nav float-right nav-top">
+
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle trsn nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span><i class="fas fa-globe"></i></span>
+                            <span>English</span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="https://bootstrap.jumpseller.com/" class="trsn nav-link" title="English">English</a></li>
+
+                            <li><a href="https://bootstrap.jumpseller.com/cl/" class="trsn nav-link" title="Español (Chile)">Español (Chile)</a></li>
+
+                            <li><a href="https://bootstrap.jumpseller.com/co/" class="trsn nav-link" title="Español (Colombia)">Español (Colombia)</a></li>
+
+                            <li><a href="https://bootstrap.jumpseller.com/br/" class="trsn nav-link" title="Português (Brasil)">Português (Brasil)</a></li>
+
+                            <li><a href="https://bootstrap.jumpseller.com/pt/" class="trsn nav-link" title="Português (Portugal)">Português (Portugal)</a></li>
+
+                            <li><a href="https://bootstrap.jumpseller.com/mx/" class="trsn nav-link" title="Español (Mexico)">Español (Mexico)</a></li>
+
+                            <li><a href="https://bootstrap.jumpseller.com/es/" class="trsn nav-link" title="Español">Español</a></li>
+
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a id="cart-link" href="https://bootstrap.jumpseller.com/cart" class="trsn nav-link" title="View/Edit Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="nav-bar-cart"><span class="cart-size">0</span> Product(s) | $0</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="/customer/login" id="login-link" class="trsn nav-link" title="Login toBootstrap">
+                            <i class="fas fa-user"></i>
+                            <span class="customer-name">
+                    Login
+                  </span>
+                        </a>
+                    </li>
+
+
+                </ul>
+                <form id="search_mini_form" class="navbar-form float-right form-inline d-none d-lg-flex" method="get" action="/search">
+                    <input type="text" value="" name="q" class="form-control form-control-sm" onfocus="javascript:this.value=''" placeholder="Search for products">
+                    <button type="submit" class="btn btn-secondary btn-sm"><i class="fas fa-search"></i></button>
+                    <input type="hidden" value="aK06w9VbStApHe1c2HbASxLSmrQmwnY6NYO2cJQK2pU=" name="authenticity_token"></form>
+                <ul class="social list-inline d-lg-none text-center">
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-none d-lg-block">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarsContainer-2">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item  ">
+                        <a href="/" title="Inicio" class="level-1 trsn nav-link">Inicio</a>
+
+                    </li>
+
+
+                    <li class="nav-item  ">
+                        <a href="/techno" title="Techno" class="level-1 trsn nav-link">Techno</a>
+
+                    </li>
+
+
+                    <li class="nav-item  ">
+                        <a href="/about-us" title="About Us" class="level-1 trsn nav-link">About Us</a>
+
+                    </li>
+
+
+                    <li class="nav-item  ">
+                        <a href="/blog" title="Blog" class="level-1 trsn nav-link">Blog</a>
+
+                    </li>
+
+
+                    <li class="nav-item  ">
+                        <a href="/contact" title="Contact" class="level-1 trsn nav-link">Contact</a>
+
+                    </li>
+
+
+                </ul>
+
+                <ul class="social navbar-toggler-right list-inline">
+
+
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Contenido de la pagina-->
+    <div id="carousel-home">
+
+
+
+        <!-- Carousel Empty -->
+        <div class="home_slider owl-carousel owl-loaded owl-drag">
+
+
+
+
+
+            <div class="owl-stage-outer">
+                <div class="owl-stage" style="transform: translate3d(-3051px, 0px, 0px); transition: all 0.25s ease 0s; width: 6102px;">
+                    <div class="owl-item cloned" style="width: 1017px;">
+                        <div class="item item-background" style="background-image:url('https://assets.jumpseller.com/store/bootstrap/themes/215975/slider-demo.jpg?1586368869')">
+                            <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                <div class="layer"></div>
+                            </a>
+                            <div class="carousel-info">
+                                <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                </a>
+                                <div class="carousel-info-inner">
+                                    <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                        <h2>Welcome to Bootstrap</h2>
+                                    </a><a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider" class="btn btn-primary" title="Add your own Sliders">Add your own Sliders</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 1017px;">
+                        <div class="item item-background" style="background-image:url('https://assets.jumpseller.com/store/bootstrap/themes/215975/slider-demo-2.jpg?1586368869')">
+                            <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                <div class="layer"></div>
+                            </a>
+                            <div class="carousel-info">
+                                <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                </a>
+                                <div class="carousel-info-inner">
+                                    <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                        <h2>Welcome to Bootstrap</h2>
+                                    </a><a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider" class="btn btn-primary" title="Add your own Sliders">Add your own Sliders</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="owl-item" style="width: 1017px;">
+                        <div class="item item-background" style="background-image:url('https://assets.jumpseller.com/store/bootstrap/themes/215975/slider-demo.jpg?1586368869')">
+                            <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                <div class="layer"></div>
+                            </a>
+                            <div class="carousel-info">
+                                <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                </a>
+                                <div class="carousel-info-inner">
+                                    <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                        <h2>Welcome to Bootstrap</h2>
+                                    </a><a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider" class="btn btn-primary" title="Add your own Sliders">Add your own Sliders</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="owl-item active" style="width: 1017px;">
+                        <div class="item item-background" style="background-image:url('https://assets.jumpseller.com/store/bootstrap/themes/215975/slider-demo-2.jpg?1586368869')">
+                            <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                <div class="layer"></div>
+                            </a>
+                            <div class="carousel-info">
+                                <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                </a>
+                                <div class="carousel-info-inner">
+                                    <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                        <h2>Welcome to Bootstrap</h2>
+                                    </a><a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider" class="btn btn-primary" title="Add your own Sliders">Add your own Sliders</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 1017px;">
+                        <div class="item item-background" style="background-image:url('https://assets.jumpseller.com/store/bootstrap/themes/215975/slider-demo.jpg?1586368869')">
+                            <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                <div class="layer"></div>
+                            </a>
+                            <div class="carousel-info">
+                                <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                </a>
+                                <div class="carousel-info-inner">
+                                    <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                        <h2>Welcome to Bootstrap</h2>
+                                    </a><a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider" class="btn btn-primary" title="Add your own Sliders">Add your own Sliders</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 1017px;">
+                        <div class="item item-background" style="background-image:url('https://assets.jumpseller.com/store/bootstrap/themes/215975/slider-demo-2.jpg?1586368869')">
+                            <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                <div class="layer"></div>
+                            </a>
+                            <div class="carousel-info">
+                                <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                </a>
+                                <div class="carousel-info-inner">
+                                    <a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider">
+                                        <h2>Welcome to Bootstrap</h2>
+                                    </a><a href="https://bootstrap.jumpseller.com/admin/themes/options#/HomeSlider" class="btn btn-primary" title="Add your own Sliders">Add your own Sliders</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="fas fa-chevron-left"></i></button><button type="button" role="presentation" class="owl-next"><i class="fas fa-chevron-right"></i></button></div>
+            <div class="owl-dots disabled"></div>
+        </div>
+
+
+    </div>
 
 
 
 
     <!--JavaScript-->
+    <script src="js/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
