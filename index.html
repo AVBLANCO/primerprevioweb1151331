@@ -8,8 +8,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/main.css">
-    <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+
+    <script src="https://use.fontawesome.com/982866f775.js"></script>
+    <!-- Font Awesome Icons -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!--carrito de compras-->
+
+
+
+    <!--Carrito de Compras-->
+
+
+
+
 </head>
 
 <body>
@@ -23,10 +34,85 @@
                     <a class="navbar-brand" href="#">Obsequiarte</a>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">¿Quienes Somos?</a></li>
+                    <li class="active"><a href="#quienesSomos">¿Quienes Somos?</a></li>
                     <li class="dropdown"><a href="#">Productos </a></li>
-                    <li class="dropdown"><a href="#">Contacto </a></li>
+                    <li class="dropdown"><a href="#contactenos">Contacto </a></li>
                     <li><a href="#">Carrito</a></li>
+                    <!--contenido-->
+                    <li class="dropdown">
+
+                        <div id="cart" class="btn-group btn-block buttons-header" data-toggle="tooltip" title="" data-original-title="View Cart">
+                            <a data-toggle="dropdown" data-loading-text="Loading..." class="btn dropdown-toggle">
+                                <div id="cart-tt"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                    <div id="cart-total" class="button-i">Carrito</div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <div class="cart-title"><i class="fa fa-shopping-bag"></i>
+                                        <div class="cart-total">Your Cart: <span>3</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">
+                                                    <a href=""><img src="imagenes/pic01.jpg" alt="Printed Top" title="Printed Top" class="img-thumbnail"></a>
+                                                </td>
+                                                <td class="text-left"><span class="name"><a href="generic.html">Amor y Amistad</a></span>
+                                                    <br>
+                                                    <span class="price">$18.000</span></td>
+                                                <td class="text-right"><span class="quantity">x1</span></td>
+                                                <td class="text-center"><button type="button" onclick="" title="Remove" class="btn btn-xs item-remove"><i class="fa fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">
+                                                    <a href=""><img src="imagenes/pic02.jpg" alt="Sample Top" title="Sample Top" class="img-thumbnail"></a>
+                                                </td>
+                                                <td class="text-left"><span class="name"><a href="generic.html">Dia del Hombre</a></span>
+                                                    <br>
+                                                    <span class="price">$17.900</span></td>
+                                                <td class="text-right"><span class="quantity">x1</span></td>
+                                                <td class="text-center"><button type="button" onclick="" title="Remove" class="btn btn-xs item-remove"><i class="fa fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">
+                                                    <a href=""><img src="imagenes/pic03.jpg" alt="Basic Top" title="Basic Top" class="img-thumbnail"></a>
+                                                </td>
+                                                <td class="text-left"><span class="name"><a href="generic.html">Dia de las Madres</a></span>
+                                                    <br>
+                                                    <span class="price">$29.900</span></td>
+                                                <td class="text-right"><span class="quantity">x1</span></td>
+                                                <td class="text-center"><button type="button" onclick="" title="Remove" class="btn btn-xs item-remove"><i class="fa fa-times"></i></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <div>
+                                        <table class="table cart-total">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-right">Sub-Total</td>
+                                                    <td class="text-right"><span>$56.70</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-right">Total</td>
+                                                    <td class="text-right"><span>$56.70</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="checkout"><a href="http://oxy.321cart.com/organic/index.php?route=checkout/cart" class="btn btn-xs btn-default">View Cart</a>&nbsp;&nbsp;&nbsp;<a href="http://oxy.321cart.com/organic/index.php?route=checkout/checkout" class="btn btn-xs btn-primary">Checkout</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <!--contenido-->
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Iniciar Sesion</a></li>
@@ -88,7 +174,7 @@
                     <a href="generic.html">
                         <h2>Amor y Amistad</h2>
                         <div class="content">
-                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros en content propierties .</p>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                 Launch demo modal
                               </button>
@@ -223,6 +309,46 @@
 
             </section>
 
+
+            <br>
+            <hr>
+            <!--  Seccion Quienes somos -->
+            <section class="page-section bg-primary" id="quienesSomos">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="text-white mt-0">¡Tenemos lo que necesitas!</h2>
+                            <hr class="divider light my-4">
+                            <p class="text-white-50 mb-4">Todo lo relacionado con obsequios para todo tipo de evento y/o fecha especial</p>
+                            <a class="btn btn-light btn-xl js-scroll-trigger" href="#">Empezar!</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contactenos Seccion -->
+            <section class="page-section" id="contactenos">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="mt-0">¡Mantengámonos en contacto!</h2>
+                            <hr class="divider my-4">
+                            <p class="text-muted mb-5">¿Listo para comenzar su próximo proyecto con nosotros? ¡Llámenos o envíenos un correo electrónico y nos pondremos en contacto con usted lo antes posible</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                            <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                            <div>+1 (202) 555-0149</div>
+                        </div>
+                        <div class="col-lg-4 mr-auto text-center">
+                            <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                            <!-- Make sure to change the email address in anchor text AND the link below! -->
+                            <a class="d-block" href="mailto:contact@yourwebsite.com">contacto@obsequiarte.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
     </div>
@@ -250,6 +376,7 @@
 
 
 
+    <!--Script-->
 
 
 </body>
